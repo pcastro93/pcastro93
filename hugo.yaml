@@ -1,0 +1,178 @@
+baseURL: "https://pcastro93.github.io/pcastro93/"
+languageCode: "en-us"
+title: "Piettro Castro"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+relativeURLs: true
+canonifyURLs: true
+
+Menus:
+  main:
+    - identifier: posts
+      name: Blog
+      title: Blog posts
+      url: /posts
+      weight: 1
+
+params:
+  title: "Piettro Castro"
+  favicon: "/fav.png"
+  description: "Software Engineer passionate about solving complex problems."
+  useBootstrapCDN: false
+  animate: true
+
+  theme:
+    defaultTheme: "light"
+
+  font:
+    fontSize: 1.2rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Piettro Castro"
+    disableSearch: false
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  hero:
+    enable: true
+    title: "Piettro Castro."
+    subtitle: "Software Engineer"
+    content: "Software Engineer passionate about solving complex problems."
+    image: https://avatars.githubusercontent.com/u/2058578?v=4
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/piettrocastro-844208117
+        - icon: fab fa-github
+          url: https://github.com/pcastro93
+
+  about:
+    image: https://avatars.githubusercontent.com/u/2058578?v=4
+    enable: true
+    title: "About Me"
+    content: |-
+      I am a Software Engineer based in Colombia with over 8 years of experience.
+      I specialize in architecting and developing complex systems using Domain-Driven Design and Microservices.
+      My technical stack includes Java, Python, Rust, AWS, Kafka, and others.
+      I have a strong background in leading technical teams and delivering data-driven solutions.
+
+      ##### Languages
+      * Spanish (Native or Bilingual)
+      * English (Full Professional)
+      * Portuguese (Professional Working)
+      * German (Elementary)
+    skills:
+      enable: true
+      title: "Some of the technologies/frameworks/methodologies/disciplines I have worked with and I am proficient in:"
+      items:
+        - "Java"
+        - "Python"
+        - "Rust"
+        - "Kafka"
+        - "AWS"
+        - "Flask"
+        - "Celery"
+        - "Docker"
+        - "Jenkins"
+        - "Git"
+        - "Domain-Driven Design"
+        - "Microservices"
+        - "Data Structures"
+
+  experience:
+    enable: true
+    items:
+      - company: "Frubana"
+        jobs:
+          - name: "Technical Leader"
+          - name: "Senior Backend Developer"
+      - company: "Alkanza"
+        jobs:
+          - name: "Senior Backend Developer"
+
+      - company: "IBM"
+        jobs:
+          - name: "Technical Leader"
+          - name: "Application Developer"
+
+      - company: "Sergio Arboleda University"
+        jobs:
+          - name: "Software Developer"
+
+  education:
+    enable: true
+    items:
+      - title: "Systems Engineering and Telecommunications"
+        school:
+          name: "Sergio Arboleda University"
+        date: 2015
+        GPA: "4.3 out of 5.0"
+
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: "Rust Find"
+        content: "Rust Find is a command-line tool that helps you find files and directories in your system."
+        image: /images/projects/rust_find.png
+        badges:
+          - "Rust"
+          - "CLI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/pcastro93/rust_find
+
+  contact:
+    enable: true
+    content: "Feel free to reach out!"
+    btnName: "Contact me"
+    btnLink: "https://www.linkedin.com/in/piettrocastro-844208117"
+
+  footer:
+    recentPosts:
+      path: "posts"
+      count: 3
+      title: "Recent Posts"
+      enable: true
+    socialNetworks:
+      github: https://github.com/pcastro93
+      linkedin: https://www.linkedin.com/in/piettrocastro-844208117
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
