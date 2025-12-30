@@ -152,6 +152,15 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/pcastro93/rust_find
+      - title: "Dualsense Stream Deck"
+        content: "Application that allows you to control your computer using a DualSense controller."
+        image: /images/projects/dualsense_stream_deck.png
+        badges:
+          - "Python"
+          - "Stream Deck"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/pcastro93/dualsense_stream_deck
 
   contact:
     enable: true
